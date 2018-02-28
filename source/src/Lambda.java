@@ -4,6 +4,38 @@ import java.util.function.Consumer;
 
 public class Lambda {
 
+    public static void iterate() {
+        List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5);
+
+    }
+
+
+
+    public static void main(String[] args) {
+
+        iterate();
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
     public static void iterate1() {
         List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5);
 
@@ -25,10 +57,10 @@ public class Lambda {
 
         numbers.stream().forEach(
                 new Consumer<Integer>() {
-                     @Override
-                     public void accept(Integer integer) {
-                         System.out.println(integer);
-                     }
+                    @Override
+                    public void accept(Integer integer) {
+                        System.out.println(integer);
+                    }
                 }
         );
     }
@@ -38,8 +70,8 @@ public class Lambda {
 
         numbers.stream().forEach(
                 (Integer integer) -> {
-                        System.out.println(integer);
-                    }
+                    System.out.println(integer);
+                }
 
         );
     }
@@ -50,7 +82,7 @@ public class Lambda {
 
         numbers.stream().forEach(
                 (Integer integer) ->
-                    System.out.println(integer)
+                        System.out.println(integer)
         );
     }
 
@@ -75,10 +107,5 @@ public class Lambda {
 
         numbers.stream().forEach(System.out::println);
     }
-
-    public static void main(String[] args) {
-
-        System.out.println(2);
-
-    }
+    */
 }

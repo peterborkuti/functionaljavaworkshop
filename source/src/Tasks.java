@@ -1,3 +1,6 @@
+import java.util.List;
+import java.util.stream.Collectors;
+
 public class Tasks {
 
     /**
@@ -11,6 +14,9 @@ public class Tasks {
     /**
      * 020 return a list of strings as a comma separated string
      */
+    public static String concatList(List<String> list) {
+        return list.stream().collect(Collectors.joining(","));
+    }
 
     /**
      * 030 return a list of integers as a comma separated string
